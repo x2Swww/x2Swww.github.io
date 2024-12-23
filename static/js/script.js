@@ -70,7 +70,7 @@ function closePopup() {
 // ซ่อนป็อปอัปเมื่อคลิกบริเวณนอกป็อปอัป
 document.getElementById('overlay').addEventListener('click', closePopup);
 
-fetch('http://0.0.0.0:10000')
+fetch('http://0.0.0.0:10000/')
   .then(response => response.text())
   .then(data => {
     console.log(data);
