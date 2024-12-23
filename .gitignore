@@ -1,0 +1,18 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+.env
+
+# Logs
+*.log
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Other temporary or system files
+.DS_Store
