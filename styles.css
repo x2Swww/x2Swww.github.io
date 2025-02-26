@@ -46,8 +46,8 @@ body {
 }
 
 .dark-mode header {
-    background-color: #1f1f1f !important;
-    border-bottom: 1px solid #333 !important;
+    background-color: #121212 !important;
+    border-bottom: 1px solid #121212 !important;
 }
 
 .dark-mode .nav-link {
