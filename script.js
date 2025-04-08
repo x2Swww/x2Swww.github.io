@@ -29,3 +29,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  showToast("คลิกขวาไม่ได้นะ");
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "F12") {
+    e.preventDefault();
+    showToast("ขออภัย ห้ามเปิด DevTools นะครับ");
+  }
+
+  if (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) {
+    e.preventDefault();
+    showToast("อย่าคิด Inspect");
+  }
+
+  if (e.ctrlKey && e.key === "u") {
+    e.preventDefault();
+    showToast("ไม่ต้องมาส่องเลย");
+  }
+
+  if (e.ctrlKey && ["c", "x", "s", "a"].includes(e.key.toLowerCase())) {
+    e.preventDefault();
+    showToast("ไม่ให้ก็อป อิอิ");
+  }
+});
