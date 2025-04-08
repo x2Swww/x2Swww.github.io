@@ -38,7 +38,7 @@ document.addEventListener("contextmenu", (e) => {
 document.addEventListener("keydown", function (e) {
   if (e.key === "F12") {
     e.preventDefault();
-    showToast("ขออภัย ห้ามเปิด DevTools นะครับ");
+    showToast("ไม่ต้องเปิด DevTools ครับ");
   }
 
   if (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key)) {
